@@ -14,7 +14,7 @@ public static void main(String args[]) throws IOException
 	int number,result,number2,counter=0;
     number2 = rand.nextInt(10)+1;
 	ServerSocket s1 = new ServerSocket(7985);
-	Socket ss = s1.accept();                            //ödevde belirtildiği gibi accept ile bekliyor.
+	Socket ss = s1.accept();                          
     Scanner sc = new Scanner(ss.getInputStream());
     PrintWriter pr = new PrintWriter(ss.getOutputStream());
     pr.println(number2); //number 2 değişkenini client'a gönderdi
